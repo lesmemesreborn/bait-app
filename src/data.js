@@ -1,0 +1,147 @@
+// id = идентификационный номер
+// img = изображение
+// name = название
+// type = bait - наживка, lure - приманка (искусственная)
+// subtype = если bait - animal (животная), vegetable (растительная), artificial (искусственная), boil (бойл)
+// subtype = если lure
+
+const baitsData = [
+  {
+    id: 1,
+    img: "https://i.ibb.co/mJ7pwQG/275px-Redwiggler1.jpg",
+    name: "Червь",
+    type: "bait",
+    subtype: "animal",
+    desc: "Lorem Ipsum",
+  },
+  {
+    id: 2,
+    img: "https://i.ibb.co/VTRRR0D/mthjpg7d2c6y8dc2nhs9x9awjqa06cav.jpg",
+    name: "Опарыш",
+    type: "bait",
+    subtype: "animal",
+    desc: "sd;lgfkdsl;gkfddf",
+  },
+  {
+    id: 3,
+    img: "https://i.ibb.co/2dYRfQy/motil.jpg",
+    name: "Мотыль",
+    type: "bait",
+    subtype: "animal",
+    desc: "fdghdfghfsfdha",
+  },
+  {
+    id: 4,
+    img: "https://i.ibb.co/ckDd0TM/shitiki-ili-kak-ih-nazyvayut-lichinki-rucheinikov.jpg",
+    name: "Личинка ручейника",
+    type: "bait",
+    subtype: "animal",
+    desc: "dghgfhdfhsfjsf",
+  },
+  {
+    id: 5,
+    img: "https://i.ibb.co/ChrpbCJ/piiavki-glavnaia-jpg-750x415-q75-crop-True-subsampling-2-upscale.jpg",
+    name: "Пиявка",
+    type: "bait",
+    subtype: "animal",
+    desc: "fdlgkjhfdlkhjsflhjsfljsslhjf",
+  },
+  {
+    id: 6,
+    img: "https://i.ibb.co/r6R9NGG/Melolontha-02.jpg",
+    name: "Личинка майского жука",
+    type: "bait",
+    subtype: "animal",
+    desc: "dlkhjdfgkjhgdkhjshjfdlhkgdjhlfksdh",
+  },
+  {
+    id: 7,
+    img: "https://i.ibb.co/7267J4Z/e2eeaeef8bf361e85618b8fdcb18111f.jpg",
+    name: "Сало",
+    type: "bait",
+    subtype: "animal",
+    desc: "dl;kfhjdflhjfdlhjdslhflhjfdlhkjdfhfdjh",
+  },
+  {
+    id: 8,
+    img: "https://i.ibb.co/ySv2nVJ/1-wh87eba-Bbv-ZN3-Jzw-Mw7f-Yeraav-CZ3-G7w-rlq8-E3cn-PCN3m-Lyjdhusg-3-DVBpa0z-Q1-Hg-R5-Wik-V09v2rheih.jpg",
+    name: "Живец",
+    type: "bait",
+    subtype: "animal",
+    desc: "dlkhjdlhsfhjfsndfhldfmlfsjhshashfdhdfhas",
+  },
+  {
+    id: 9,
+    img: "https://i.ibb.co/1fjn6wY/1504871227-0-151-3020-1850-600x0-80-0-0-8c59bf4a72d61eb256d903124d6cab20.jpg",
+    name: "Кукуруза",
+    type: "bait",
+    subtype: "vegetable",
+    desc: "dlkgjhlsfhjflskhjfshgdjhsfhjdlfhjskhflhjhh",
+  },
+  {
+    id: 10,
+    img: "https://i.ibb.co/37w7MvP/perlovka-dlya-ribalki-01.jpg",
+    name: "Перловка",
+    type: "bait",
+    subtype: "vegetable",
+    desc: "hd;jhl;kdfgh;fsjhlfshjskfhjdflkhflhjs;lhfsdlkhj",
+  },
+  {
+    id: 11,
+    img: "https://i.ibb.co/3S1sKrZ/manka-tyanu.jpg",
+    name: "Манка",
+    type: "bait",
+    subtype: "vegetable",
+    desc: "dglhjfsl;kjhflhjfd;kghjgdfjjsdjfdlkhsdjlkhjsf",
+  },
+  {
+    id: 12,
+    img: "https://i.ibb.co/x2WpqMN/Kak-prigotovit-primanku.jpg",
+    name: "Хлеб",
+    type: "bait",
+    subtype: "vegetable",
+    desc: "g;ldfkjhfldkjfs;lhkfjhs;fhsfdlkjhfdsad;lhfslkhjs;h",
+  },
+  {
+    id: 13,
+    img: "https://i.ibb.co/jgjrLZR/10-1.jpg",
+    name: "Кастер",
+    type: "bait",
+    subtype: "animal",
+    desc: "dfgkhjf;hdhfjh;lsfdhdlkhjdas;lhfdlkhjad'lhk",
+  },
+  {
+    id: 14,
+    img: "https://i.ibb.co/YpCTNvG/4-16-685x459.jpg",
+    name: "Макуха",
+    type: "bait",
+    subtype: "vegetable",
+    desc: "dfl;khjsf;lksfjkhjfs;hldkashkjhadhahdakhjs",
+  },
+  {
+    id: 15,
+    img: "https://i.ibb.co/vqxVVTN/penoplast.jpg",
+    name: "Пенопласт",
+    type: "bait",
+    subtype: "artificial",
+    desc: "dflmhdjasg;fmjlkfshklsfnfskphjd;hsko",
+  },
+  {
+    id: 16,
+    img: "https://i.ibb.co/xmxL1ns/vybor-makaron-dlya-rybalki.jpg",
+    name: "Макароны",
+    type: "bait",
+    subtype: "vegetable",
+    desc: "dflmhdjasg;fmjlkfshklsfnfskphjd;hsko",
+  },
+  {
+    id: 17,
+    img: "https://i.ibb.co/q12y2HY/22-2-e1503593253834.jpg",
+    name: "Горох",
+    type: "bait",
+    subtype: "vegatable",
+    desc: "dflmhdjasg;fmjlkfshklsfnfskphjd;hsko",
+  },
+]
+
+export default baitsData
